@@ -11,6 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Show environment values
-        run: echo $GITHUB_ACTION &&
-             echo $GITHUB_EVENT_NAME
+        run: ls -l &&
+             echo $GITHUB_ACTION &&
+             echo $GITHUB_EVENT_NAME &&
+             echo $GITHUB_REPOSITORY &&
+             echo $GITHUB_RUN_NUMBER &&
+             echo $GITHUB_WORKFLOW &&
+             echo $GITHUB_WORKSPACE &&
+             echo $GITHUB_NAME &&
+             echo $GITHUB_OS &&
+             echo $GITHUB_ARCH
     
